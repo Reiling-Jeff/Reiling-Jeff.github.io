@@ -25,7 +25,7 @@
       
       {% if count > 0 %}
         {% assign tags_found = true %}
-        <a class="post-tag btn btn-outline-primary" href="{{ '/tags/' | relative_url }}{{ tag_name | slugify }}/">
+        <a class="post-tag btn btn-outline-primary" href="{{ tag_name | slugify | prepend: '/tags/' | relative_url }}/">
           {{ tag_name }}
         </a>
       {% endif %}
