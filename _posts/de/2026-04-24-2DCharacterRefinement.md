@@ -134,7 +134,7 @@ Dazu gibt es zum jetzigem stand keine Dokumentation. Vielleicht mache ich mal ei
 | `coyoteTimeDuration` | Wie lange der coyote timer sein soll in Sekunden | 0.15 |
 
 Zuerst müssen wir uns überlegen welche Variablen ein Coyote Time bruacht. 
-Die einmal einen Counter, und eine Duration. In diesem fall ist die Duration ein [SerializeField]("https://docs.unity3d.com/6000.3/Documentation/ScriptReference/SerializeField.html")
+Die einmal einen Counter, und eine Duration. In diesem fall ist die Duration ein [SerializeField]("https://docs.unity3d.com/Documentation/ScriptReference/SerializeField.html")
 
 ```cs
 [Header("Coyote Time")]
@@ -142,7 +142,7 @@ Die einmal einen Counter, und eine Duration. In diesem fall ist die Duration ein
 private float coyoteTimeCounter; 
 ```
 
-In der Update() methode setzen wir dann einfach den Counter = Duration, wenn der Spieler den Ground berührt. wenn er das nicht tut, ziehen wir [Time.deltaTime;](https://docs.unity3d.com/6000.3/Documentation/ScriptReference/Time-deltaTime.html) vom Counter ab.
+In der Update() methode setzen wir dann einfach den Counter = Duration, wenn der Spieler den Ground berührt. wenn er das nicht tut, ziehen wir [Time.deltaTime;](https://docs.unity3d.com/Documentation/ScriptReference/Time-deltaTime.html) vom Counter ab.
 
 ```cs
 if (m_isGrounded)
