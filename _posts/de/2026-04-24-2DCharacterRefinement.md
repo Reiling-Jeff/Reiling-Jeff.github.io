@@ -134,7 +134,7 @@ Dazu gibt es zum jetzigem stand keine Dokumentation. Vielleicht mache ich mal ei
 | `coyoteTimeDuration` | Wie lange der coyote timer sein soll in Sekunden | 0.15 |
 
 Zuerst müssen wir uns überlegen welche Variablen ein Coyote Time bruacht. 
-Die einmal einen Counter, und eine Duration. In diesem fall ist die Duration ein [SerializeField]("https://docs.unity3d.com/Documentation/ScriptReference/SerializeField.html")
+Die einmal einen Counter, und eine Duration. In diesem fall ist die Duration ein [SerializeField](https://docs.unity3d.com/Documentation/ScriptReference/SerializeField.html)
 
 ```cs
 [Header("Coyote Time")]
